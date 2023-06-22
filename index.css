@@ -8,6 +8,7 @@ body{
     margin: 0;
     padding-top: 80px;
     padding-left: 85px;
+    position: absolute;
     
 }
 .side-bar{
@@ -17,55 +18,28 @@ body{
     bottom: 0;
     top: 55px;
     width:72px;
-    height:350px;
-    border-right-width:1px ;
-    border-right-style:solid ;
-    border-right-color: rgb(219, 217, 217);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
+
+
 }
 
 .side-info{
     font-size: 10px;
     margin-bottom: 4px;
 }
-.home-icon{
-    height: 24px;
-    width: 24px;
-    margin-top: 4px;
-    
+.sidebar-link{
+    height: 50px;
+    margin-bottom: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
-
-.explore-icon{
-    height: 24px;
-    width: 24px;
-    margin-top: 4px;
+.sidebar-link:hover{
+    background-color: rgb(231, 222, 222);
 }
-
-.subscription-icon{
-    height: 24px;
-    width: 24px;
-    margin-top: 4px;
-}
-
-.originals-icon{
-    height: 24px;
-    width: 24px;
-    margin-top: 4px;
-}
-
-.music-icon{
-    height: 24px;
-    width: 24px;
-    margin-top: 4px;
-}
-
-.library-icon{
-    height: 24px;
-    width: 24px;
-    margin-top: 4px;
+.icon{
+     height: 24px;
+     width: 24px;
 }
 
 .header{
@@ -74,7 +48,7 @@ body{
     height: 55px;
     margin-bottom: 20px;
     justify-content: space-between;
-    position: fixed;
+    position: absolute;
     top:0;
     left:0;
     right:0;
@@ -82,6 +56,7 @@ body{
     border-bottom-width: 1px;
     border-bottom-style: solid;
     border-bottom-color: rgb(219, 217, 217);
+    z-index: 100;
 }
 .left-section{
     display: flex;
